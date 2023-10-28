@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.formContainer{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.formContainer > form{
+    border: .5px solid silver;
+    border-radius: 10px;
+    padding: 50px 20px;
+    background: white;
+}
+
+
+.loginInput{
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: .5px solid silver;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.loginInputContainer{
+    margin: 20px 0px;
+}
+
+.loginBtn{
+    width: 250px;
+    height: 40px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.toastContainer{
+    width: 250px;
+    height: 50px;
+    background: rgb(255, 75, 68);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    border-radius: 5px;
+    transform: translateX(120%);
+    transition: all .2s ease-in; 
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toastContainerOpen{
+    width: 250px;
+    height: 50px;
+    background: rgb(255, 75, 68);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    transform: translateX(0);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.toastContainerSuc{
+    width: 250px;
+    height: 50px;
+    background: rgb(3, 162, 125);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    transform: translateX(0);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+span{
+    color: white;
+}
